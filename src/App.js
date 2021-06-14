@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar.component";
+import About from "./components/About.component";
 import Users from "./components/users/users.component";
 import Search from "./components/Search.component";
 import Alert from "./components/layout/Alert.component";
@@ -24,7 +25,7 @@ class App extends Component {
     const res = await axios.get(
       `https://api.github.com/search/users?q=${text}`
     );
-
+    console.log(res.data);
     this.setState({
       users: res.data.items,
       loading: false,
@@ -103,7 +104,6 @@ class App extends Component {
               <Route
                 exact
                 path="/user/:login"
-                exact
                 render={(props) => {
                   return (
                     <UserProfile
@@ -117,6 +117,7 @@ class App extends Component {
                   );
                 }}
               ></Route>
+              <Route path="/about" component={About}></Route>
             </Switch>
           </div>
         </div>

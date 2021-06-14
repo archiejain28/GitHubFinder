@@ -369,7 +369,7 @@ table th {
 }
 
 .navbar a:hover {
-  color: var(--light-color);
+  color: var(--dark-color);
 }
 
 .navbar .welcome span {
@@ -399,16 +399,5 @@ table th {
 
   .lead {
     font-size: 1rem;
-  }
-
-  /* Navbar */
-  .navbar {
-    display: block;
-    text-align: center;
-  }
-
-  .navbar ul {
-    text-align: center;
-    justify-content: center;
   }
 }

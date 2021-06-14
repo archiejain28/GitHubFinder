@@ -7,13 +7,13 @@ function Navbar() {
         <span id="navbar-brand">
           <i class="fab fa-github" aria-hidden="true"></i> GitHub Finder
         </span>
-        <div className="container">
+        <div>
           <ul className="nav-list">
             <li className="nav-items">
-              <a href="#">Home</a>
+              <a href="/">Home</a>
             </li>
             <li className="nav-items">
-              <a href="#">About</a>
+              <a href="/about">About</a>
             </li>
           </ul>
         </div>
